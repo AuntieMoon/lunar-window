@@ -3,6 +3,8 @@ name: Lunar Window Snapshot
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '*/30 * * * *'
 
 permissions:
   contents: write
